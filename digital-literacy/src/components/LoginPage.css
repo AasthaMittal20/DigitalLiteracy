@@ -89,9 +89,9 @@ button {
   position: absolute;
   right: 0;
   top: 0;
-  width: 900px;
+  width: 270px;
   height: 100%;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
+  background-image: url('/Users/manthanmaru/Desktop/DigitalLiteracy/digital-literacy/src/assets/digitalbuddy.jpeg');
   background-size: cover;
   transition: transform 1.2s ease-in-out;
 }
@@ -101,8 +101,10 @@ button {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 270px;
   height: 100%;
+  background-image: url('/Users/manthanmaru/Desktop/DigitalLiteracy/digital-literacy/src/assets/digitalbuddy.jpeg');
+  background-size: cover;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -118,7 +120,7 @@ button {
   width: 100%;
   padding: 0 20px;
   text-align: center;
-  color: #fff;
+  color: #f3ecec;
   transition: transform 1.2s ease-in-out;
 }
 
