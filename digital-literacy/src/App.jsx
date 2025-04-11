@@ -6,8 +6,6 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
 import Logout from './components/Logout';
 import './components/Auth.css';
-import LearnWhat from './dashboard/learnWhat';
-
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,8 +17,10 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/learnWhat" element={<LearnWhat />
-              
+            <Route path="/" element={
+              <PrivateRoute>
+                <Home count={count} setCount={setCount} />
+              </PrivateRoute>
             } />
           </Routes>
         </div>
@@ -41,7 +41,6 @@ function Navigation() {
           <>
             <Link to="/login">Login</Link>
             <Link to="/register">Register</Link>
-            <Link to="/learnWhat">LearnWhat</Link>
           </>
         ) : (
           <Logout />
