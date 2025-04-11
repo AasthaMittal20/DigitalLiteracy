@@ -120,9 +120,9 @@ button {
   position: absolute;
   right: 0;
   top: 0;
-  width: 900px;
+  width: 270px;
   height: 100%;
-  background-image: url('https://i.imgur.com/QfQwrSC.png');
+  background-image: url('/Users/manthanmaru/Desktop/DigitalLiteracy/digital-literacy/src/assets/digitalbuddy.jpeg');
   background-size: cover;
   background-position: center;
   transition: transform 1.2s ease-in-out;
@@ -133,9 +133,11 @@ button {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 270px;
   height: 100%;
-  background: linear-gradient(to right, rgba(15, 41, 66, 0.8) 0%, rgba(59, 22, 64, 0.8) 100%);
+  background-image: url('/Users/manthanmaru/Desktop/DigitalLiteracy/digital-literacy/src/assets/digitalbuddy.jpeg');
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .cont.s--signup .img:before {
@@ -150,7 +152,7 @@ button {
   width: 100%;
   padding: 0 20px;
   text-align: center;
-  color: #fff;
+  color: #f3ecec;
   transition: transform 1.2s ease-in-out;
 }
 
