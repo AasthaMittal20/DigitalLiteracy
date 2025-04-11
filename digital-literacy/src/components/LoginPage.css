@@ -137,7 +137,9 @@ button {
   height: 100%;
   background-image: url('../assets/digitalbuddy.jpeg');
   background-size: cover;
-  background: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
 }
 
 .cont.s--signup .img:before {
@@ -240,6 +242,13 @@ h2 {
   font-size: 26px;
   text-align: center;
   color: black;
+}
+
+h3 {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+  color: white;
 }
 
 label {

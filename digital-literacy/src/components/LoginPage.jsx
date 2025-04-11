@@ -108,11 +108,11 @@ const LoginPage = () => {
         <div className="sub-cont">
           <div className="img">
             <div className="img__text m--up">
-              <h2>New here?</h2>
+              <h3>New here?</h3>
               <p>Sign up and discover the digital world with us!</p>
             </div>
             <div className="img__text m--in">
-              <h2>One of us?</h2>
+              <h3>One of us?</h3>
               <p>If you already have an account, just sign in. We've missed you!</p>
             </div>
             <div className="img__btn" onClick={toggleSignUp}>
