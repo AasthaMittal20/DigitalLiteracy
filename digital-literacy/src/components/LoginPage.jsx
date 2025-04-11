@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../firebase";
@@ -12,6 +12,17 @@ const LoginPage = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  // Add effect to prevent body scrolling
+  useEffect(() => {
+    // Disable scrolling on body when component mounts
+    document.body.style.overflow = 'hidden';
+    
+    // Re-enable scrolling when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   const toggleSignUp = () => {
     setIsSignUp(!isSignUp);
@@ -63,11 +74,11 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       {error && <div className="error-message">{error}</div>}
-      <p className="tip">Digital Buddy</p>
+      <p className="tip">Digital Literacy Hub</p>
       
       <div className={`cont ${isSignUp ? "s--signup" : ""}`}>
         <div className="form sign-in">
-          <h2>Welcome back,</h2>
+          <h2>Welcome Back</h2>
           <form onSubmit={handleSignIn}>
             <label>
               <span>Email</span>
@@ -98,7 +109,7 @@ const LoginPage = () => {
           <div className="img">
             <div className="img__text m--up">
               <h2>New here?</h2>
-              <p>Sign up and discover great features of Digital Literacy!</p>
+              <p>Sign up and discover the digital world with us!</p>
             </div>
             <div className="img__text m--in">
               <h2>One of us?</h2>
@@ -111,7 +122,7 @@ const LoginPage = () => {
           </div>
           
           <div className="form sign-up">
-            <h2>Time to feel like home,</h2>
+            <h2>Join Our Community</h2>
             <form onSubmit={handleSignUp}>
               <label>
                 <span>Name</span>
