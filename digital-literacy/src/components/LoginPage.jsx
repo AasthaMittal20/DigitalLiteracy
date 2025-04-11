@@ -63,7 +63,7 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       {error && <div className="error-message">{error}</div>}
-      <p className="tip">Click on the button in image container to toggle between sign in and sign up</p>
+      <p className="tip">Digital Buddy</p>
       
       <div className={`cont ${isSignUp ? "s--signup" : ""}`}>
         <div className="form sign-in">
@@ -92,7 +92,6 @@ const LoginPage = () => {
               {loading ? "Signing In..." : "Sign In"}
             </button>
           </form>
-          <button type="button" className="fb-btn">Connect with <span>facebook</span></button>
         </div>
         
         <div className="sub-cont">
@@ -145,7 +144,6 @@ const LoginPage = () => {
                 {loading ? "Signing Up..." : "Sign Up"}
               </button>
             </form>
-            <button type="button" className="fb-btn">Join with <span>facebook</span></button>
           </div>
         </div>
       </div>
