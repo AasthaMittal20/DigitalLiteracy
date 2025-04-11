@@ -38,5 +38,62 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #ffffff;
+}
+
+/* Navigation styles */
+.App nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4285f4;
+  color: white;
+}
+
+.App nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.App nav div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.App nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.App nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home container */
+.home-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.home-container h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.home-container p {
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* Additional button styles for home */
+.home-container .card button {
+  max-width: 200px;
+  margin: 0 auto;
 }
