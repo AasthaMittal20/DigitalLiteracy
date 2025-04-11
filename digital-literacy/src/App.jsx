@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
-import Login from './components/Login';
-import Register from './components/Register';
-import Logout from './components/Logout';
+import LoginPage from './components/LoginPage';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
+import Logout from './components/Logout';
 import './components/Auth.css';
 import LearnWhat from './dashboard/learnWhat';
 
@@ -17,8 +16,6 @@ function App() {
     <Router>
       <AuthProvider>
         <div className="App">
-          <Navigation />
-          
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
@@ -37,7 +34,7 @@ function Navigation() {
   
   return (
     <nav>
-      <h1>Digital Literacy</h1>
+      <h1>Digital Buddy</h1>
       <div>
         <Link to="/">Home</Link>
         {!currentUser ? (
